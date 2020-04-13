@@ -19,16 +19,13 @@ class Impact:
         }
 
     @staticmethod
-    def impact():
+    def impact(data):
 
-        data_object = json.loads(__dict__.data)
-
-        # data_pickle = jsonpickle.decode(data)
+        data_object = json.loads(data)
 
         reported_cases = data_object.get("reportedCases")
         period_type = data_object.get("periodType")
         time_to_elapse = data_object.get("timeToElapse")
-
         population = data_object.get("population")
 
         estimate_currently_infected = reported_cases * 10
