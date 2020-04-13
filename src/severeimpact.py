@@ -19,17 +19,15 @@ class Severe:
         }
 
     @staticmethod
-    def severe_impact():
+    def severe_impact(data):
 
-        data_object = json.loads(__dict__.data)
+        severe_data = json.loads(data)
 
-        # data_pickle = jsonpickle.decode(data)
-
-        reported_cases = data_object.get("reportedCases")
-        period_type = data_object.get("periodType")
-        time_to_elapse = data_object.get("timeToElapse")
-        total_hospital_beds = data_object.get("totalHospitalBeds")
-        population = data_object.get("population")
+        reported_cases = severe_data.get("reportedCases")
+        period_type = severe_data.get("periodType")
+        time_to_elapse = severe_data.get("timeToElapse")
+        total_hospital_beds = severe_data.get("totalHospitalBeds")
+        population = severe_data.get("population")
 
         estimate_currently_infected = reported_cases * 10
 
@@ -52,7 +50,7 @@ class Severe:
         average_daily_dollar = math.trunc((estimate_projected_infections * 0.65 * 1.5) / 30)
         estimate_dollars_in_flight = average_daily_dollar * population
 
-        data = {'currently_infected': estimate_currently_infected,
+        self = {'currently_infected': estimate_currently_infected,
                 'projected_infections': estimate_projected_infections,
                 'estimate_severe_cases': estimate_severe_cases,
                 'bed_space_availability': estimate_bed_space_availability,
@@ -60,4 +58,4 @@ class Severe:
                 'estimate_cases_for_ventilators': estimate_cases_for_ventilators,
                 'estimate_dollars_in_flight': estimate_dollars_in_flight}
 
-        return json.dumps(data)
+        return json.dumps(self)
