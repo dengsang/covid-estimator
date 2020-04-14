@@ -13,6 +13,7 @@ def estimator(data):
     population = data_object.get("population")
 
     estimate_currently_infected = reported_cases * 10
+    severe_impact_currently_infected = reported_cases * 50
 
     if period_type == "months":
         elapse = math.trunc(time_to_elapse / 3) * 30
@@ -24,39 +25,55 @@ def estimator(data):
         elapse = 0
 
     estimate_projected_infections = estimate_currently_infected * (2 ** elapse)
+    severe_projected_infections = severe_impact_currently_infected * (2 ** elapse)
+    # impact
     estimate_cases_for_icu = math.trunc(0.5 * estimate_projected_infections)
     estimate_cases_for_ventilators = math.trunc(0.2 * estimate_projected_infections)
+    # severe
+    severe_estimate_cases_for_icu = math.trunc(0.5 * severe_projected_infections)
+    severe_estimate_cases_for_ventilators = math.trunc(0.2 * severe_projected_infections)
 
-    estimate_severe_cases = math.trunc(0.15 * estimate_projected_infections)
     severe_hospital_beds = math.trunc(0.35 * total_hospital_beds)
-    estimate_bed_space_availability = severe_hospital_beds - estimate_severe_cases
+
+    # impact
     estimate_severe_cases = math.trunc(0.15 * estimate_projected_infections)
+    estimate_bed_space_availability = severe_hospital_beds - estimate_severe_cases
+    # severe
+    severe_estimate_severe_cases = math.trunc(0.15 * severe_projected_infections)
+    severe_estimate_bed_space_availability = severe_hospital_beds - severe_estimate_severe_cases
 
+    # impact
     average_daily_dollar = math.trunc(estimate_projected_infections * 0.65 * 1.5) / 30
-    estimate_dollars_in_flight = average_daily_dollar * population
+    estimate_dollars_in_flight = math.trunc(average_daily_dollar * population)
 
-    impact_data = {'currently_infected': estimate_currently_infected,
-                   'projected_infections': estimate_projected_infections,
-                   'estimate_cases_for_icu': estimate_cases_for_icu,
-                   'estimate_cases_for_ventilators': estimate_cases_for_ventilators,
-                   'estimate_dollars_in_flight': estimate_dollars_in_flight}
+    # severe
+    severe_average_daily_dollar = math.trunc(severe_projected_infections * 0.65 * 1.5) / 30
+    severe_estimate_dollars_in_flight = math.trunc(severe_average_daily_dollar * population)
 
-    severe_data = {'currently_infected': estimate_currently_infected,
-                   'projected_infections': estimate_projected_infections,
-                   'estimate_severe_cases': estimate_severe_cases,
-                   'bed_space_availability': estimate_bed_space_availability,
-                   'estimate_cases_for_icu': estimate_cases_for_icu,
-                   'estimate_cases_for_ventilators': estimate_cases_for_ventilators,
-                   'estimate_dollars_in_flight': estimate_dollars_in_flight}
+    impact_data = {'currentlyInfected': estimate_currently_infected,
+                   'infectionsByRequestedTime': estimate_projected_infections,
+                   'severeCasesByRequestedTime': estimate_severe_cases,
+                   'hospitalBedsByRequestedTime': estimate_bed_space_availability,
+                   'casesForICUByRequestedTime': estimate_cases_for_icu,
+                   'casesForVentilatorsByRequestedTime': estimate_cases_for_ventilators,
+                   'dollarsInFlight': estimate_dollars_in_flight}
 
-    result = {'data': data, 'impact': impact_data, 'severe_impact': severe_data}
+    severe_data = {'currentlyInfected': severe_impact_currently_infected,
+                   'infectionsByRequestedTime': severe_projected_infections,
+                   'severeCasesByRequestedTime': severe_estimate_severe_cases,
+                   'hospitalBedsByRequestedTime': severe_estimate_bed_space_availability,
+                   'casesForICUByRequestedTime': severe_estimate_cases_for_icu,
+                   'casesForVentilatorsByRequestedTime': severe_estimate_cases_for_ventilators,
+                   'dollarsInFlight': severe_estimate_dollars_in_flight}
+
+    result = {'data': data, 'impact': impact_data, 'severeImpact': severe_data}
 
     print(result)
 
     return json.dumps(result)
 
 
-def covid19_impact_estimator():
+def covid19ImpactEstimator():
     input_data = {
         "region": {
             "name": "Africa",
@@ -74,4 +91,4 @@ def covid19_impact_estimator():
 
 
 if __name__ == "__main__":
-    covid19_impact_estimator()
+    covid19ImpactEstimator()
