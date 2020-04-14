@@ -50,7 +50,7 @@ class Severe:
         average_daily_dollar = math.trunc((estimate_projected_infections * 0.65 * 1.5) / 30)
         estimate_dollars_in_flight = average_daily_dollar * population
 
-        self = {'currently_infected': estimate_currently_infected,
+        data = {'currently_infected': estimate_currently_infected,
                 'projected_infections': estimate_projected_infections,
                 'estimate_severe_cases': estimate_severe_cases,
                 'bed_space_availability': estimate_bed_space_availability,
@@ -58,4 +58,4 @@ class Severe:
                 'estimate_cases_for_ventilators': estimate_cases_for_ventilators,
                 'estimate_dollars_in_flight': estimate_dollars_in_flight}
 
-        return json.dumps(self)
+        return json.dumps(data)
