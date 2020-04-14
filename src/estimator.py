@@ -27,17 +27,16 @@ def covid19_impact_estimator(data):
         estimate_dollars_in_flight = severeimpact.Severe.severe_impact(data).estimate_dollars_in_flight
 
         # def estimator():
-        result = itertools.chain(data,
-                                 # challenge1
-                                 estimate_currently_infected, estimate_projected_infections,
-                                 # challenge2
-                                 estimate_severe_cases, estimate_bed_space_availability,
-                                 # challenge3
-                                 estimate_cases_for_icu, estimate_cases_for_ventilators, estimate_dollars_in_flight
-                                 )
+        estimate = itertools.chain(data,
+                                   # challenge1
+                                   estimate_currently_infected, estimate_projected_infections,
+                                   # challenge2
+                                   estimate_severe_cases, estimate_bed_space_availability,
+                                   # challenge3
+                                   estimate_cases_for_icu, estimate_cases_for_ventilators, estimate_dollars_in_flight
+                                   )
 
-        for estimates in result:
-
+        for estimates in estimate:
             return json.dumps(estimates.__dict__)
 
-        return estimator(result)
+        return estimator(data)
