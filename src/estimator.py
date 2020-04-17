@@ -68,9 +68,7 @@ def estimator(data):
 
     result = {'data': data, 'impact': impact_data, 'severeImpact': severe_data}
 
-    print(result)
-
-    return json.dumps(result)
+    return result
 
 
 def covid19ImpactEstimator():
