@@ -1,0 +1,11 @@
+[2020-Apr-19 03:59] 127.0.0.1 GET http /api/v1/on-covid-19/xml? 200 OK
+[2020-Apr-19 04:00] 127.0.0.1 GET http /api/v1/on-covid-19/xml? 200 OK
+[2020-Apr-19 18:38] 127.0.0.1 GET http /api/v1/on-covid-19/json? 200 OK
+[2020-Apr-19 18:39] 127.0.0.1 GET http /api/v1/on-covid-19/json? 200 OK
+[2020-Apr-19 18:44] 127.0.0.1 POST http /api/v1/on-covid-19? 200 OK
+[2020-Apr-19 18:44] 127.0.0.1 POST http /api/v1/on-covid-19? 200 OK
+[2020-Apr-19 18:49] 127.0.0.1 POST http /api/v1/on-covid-19? 200 OK
+[2020-Apr-19 18:50] 127.0.0.1 GET http /api/v1/on-covid-19/json? 200 OK
+[2020-Apr-19 18:50] 127.0.0.1 GET http /api/v1/on-covid-19/xml? 200 OK
+[2020-Apr-19 18:51] 127.0.0.1 GET http /api/v1/on-covid-19/xml? 200 OK
+[2020-Apr-19 18:51] 127.0.0.1 GET http /api/v1/on-covid-19/json? 200 OK

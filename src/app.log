@@ -1,0 +1,86 @@
+[19/Apr/2020:03:59:06.188] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:03:59:07.443] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:03:59:07.655] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:03:59:07.792] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:03:59:48.976] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 03:59:48] "[37mGET /api/v1/on-covid-19/xml HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:00:35.273] INFO werkzeug:_log:  * Detected change in 'D:\\js_workspace\\covid-estimator\\src\\covid_estimator_endpoints.py', reloading
+[19/Apr/2020:04:00:35.394] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:04:00:37.303] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:04:00:37.335] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:04:00:37.359] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:04:00:58.745] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:00:58] "[37mGET /api/v1/on-covid-19/xml HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:10:00.261] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:10:00] "[35m[1mGET /api/v1/on-covid-19/logs HTTP/1.1[0m" 500 -
+[19/Apr/2020:04:10:01.331] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:10:01] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:10:01.346] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:10:01] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:10:01.353] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:10:01] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:10:03.370] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:10:03] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:10:03.662] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:10:03] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:10:04.166] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:10:04] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:15:31.823] INFO werkzeug:_log:  * Detected change in 'D:\\js_workspace\\covid-estimator\\src\\covid_estimator_endpoints.py', reloading
+[19/Apr/2020:04:15:31.862] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:04:15:33.518] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:04:15:33.538] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:04:15:33.557] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:04:15:37.175] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:04:15:38.445] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:04:15:38.469] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:04:15:38.492] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:04:16:03.649] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:16:03] "[35m[1mGET /api/v1/on-covid-19/logs HTTP/1.1[0m" 500 -
+[19/Apr/2020:04:16:03.697] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:16:03] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:16:03.701] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:16:03] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:16:03.703] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:16:03] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:16:04.171] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:16:04] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:16:04.193] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:16:04] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:16:04.305] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 04:16:04] "[37mGET /api/v1/on-covid-19/logs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+[19/Apr/2020:04:17:21.418] INFO werkzeug:_log:  * Detected change in 'D:\\js_workspace\\covid-estimator\\src\\covid_estimator_endpoints.py', reloading
+[19/Apr/2020:04:17:21.458] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:18:37:54.539] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:18:37:55.627] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:18:37:55.749] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:18:37:55.844] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:18:38:12.588] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 18:38:12] "[37mGET /api/v1/on-covid-19/json HTTP/1.1[0m" 200 -
+[19/Apr/2020:18:39:39.196] INFO werkzeug:_log:  * Detected change in 'D:\\js_workspace\\covid-estimator\\src\\flask_logs.py', reloading
+[19/Apr/2020:18:39:39.308] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:18:39:40.485] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:18:39:40.516] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:18:39:40.539] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:18:39:58.736] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 18:39:58] "[37mGET /api/v1/on-covid-19/json HTTP/1.1[0m" 200 -
+[19/Apr/2020:18:43:07.587] INFO werkzeug:_log:  * Detected change in 'D:\\js_workspace\\covid-estimator\\src\\flask_logs.py', reloading
+[19/Apr/2020:18:43:07.614] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:18:43:08.729] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:18:43:08.753] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:18:43:08.774] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:18:44:25.862] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 18:44:25] "[37mPOST /api/v1/on-covid-19 HTTP/1.1[0m" 200 -
+[19/Apr/2020:18:44:34.414] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 18:44:34] "[37mPOST /api/v1/on-covid-19 HTTP/1.1[0m" 200 -
+[19/Apr/2020:18:48:19.486] INFO werkzeug:_log:  * Detected change in 'D:\\js_workspace\\covid-estimator\\src\\flask_logs.py', reloading
+[19/Apr/2020:18:48:19.526] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:18:48:21.143] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:18:48:21.182] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:18:48:21.212] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:18:48:54.616] INFO werkzeug:_log:  * Detected change in 'D:\\js_workspace\\covid-estimator\\src\\flask_logs.py', reloading
+[19/Apr/2020:18:48:54.643] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:18:48:55.830] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:18:48:55.855] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:18:48:55.876] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:18:49:18.849] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 18:49:18] "[37mPOST /api/v1/on-covid-19 HTTP/1.1[0m" 200 -
+[19/Apr/2020:18:50:14.505] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 18:50:14] "[37mGET /api/v1/on-covid-19/json HTTP/1.1[0m" 200 -
+[19/Apr/2020:18:50:24.516] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 18:50:24] "[37mGET /api/v1/on-covid-19/xml HTTP/1.1[0m" 200 -
+[19/Apr/2020:18:51:39.178] INFO werkzeug:_log:  * Detected change in 'D:\\js_workspace\\covid-estimator\\src\\flask_logs.py', reloading
+[19/Apr/2020:18:51:39.214] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:18:51:40.423] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:18:51:40.447] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:18:51:40.468] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:18:51:47.103] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 18:51:47] "[37mGET /api/v1/on-covid-19/xml HTTP/1.1[0m" 200 -
+[19/Apr/2020:18:51:56.048] INFO werkzeug:_log: 127.0.0.1 - - [19/Apr/2020 18:51:56] "[37mGET /api/v1/on-covid-19/json HTTP/1.1[0m" 200 -
+[19/Apr/2020:18:52:28.383] INFO werkzeug:_log:  * Detected change in 'D:\\js_workspace\\covid-estimator\\src\\flask_logs.py', reloading
+[19/Apr/2020:18:52:28.419] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:18:52:29.852] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:18:52:29.877] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:18:52:29.899] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:18:53:15.117] INFO werkzeug:_log:  * Detected change in 'D:\\js_workspace\\covid-estimator\\src\\flask_logs.py', reloading
+[19/Apr/2020:18:53:15.149] INFO werkzeug:_log:  * Restarting with stat
+[19/Apr/2020:18:53:16.292] WARNING werkzeug:_log:  * Debugger is active!
+[19/Apr/2020:18:53:16.313] INFO werkzeug:_log:  * Debugger PIN: 267-672-524
+[19/Apr/2020:18:53:16.334] INFO werkzeug:_log:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[19/Apr/2020:18:54:59.483] INFO werkzeug:_log:  * Detected change in 'D:\\js_workspace\\covid-estimator\\src\\covid_estimator_endpoints.py', reloading
+[19/Apr/2020:18:54:59.529] INFO werkzeug:_log:  * Restarting with stat
